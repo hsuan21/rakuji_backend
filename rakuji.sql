@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- 主機： 127.0.0.1
--- 產生時間： 2022-06-17 15:18:34
+-- 產生時間： 2022-06-16 17:18:00
 -- 伺服器版本： 8.0.28
 -- PHP 版本： 7.4.27
 
@@ -103,14 +103,7 @@ INSERT INTO `booking` (`id`, `member_id`, `booking_date`, `store`, `people_adult
 (177, 35, '2022/06/16', '高雄左營店', 8, 0, '中午', '13:00', '王鮭魚', '0984125252', 'yoyoman870221@gmail.com', '', '2022-06-16 01:26:59'),
 (178, 35, '2022/06/16', '高雄左營店', 2, 0, '中午', '10:30', '王鮭魚', '0984125252', 'yoyoman870221@gmail.com', '', '2022-06-16 01:32:19'),
 (179, 35, '2022/06/16', '高雄左營店', 4, 0, '中午', '11:30', '王鮭魚', '0984125252', 'yoyoman870221@gmail.com', '', '2022-06-16 01:33:59'),
-(180, 35, '2022/06/16', '高雄左營店', 3, 0, '中午', '14:00', '王曉明', '0923456789', 'rakuji.github@gmail.com', '123132123123', '2022-06-16 04:03:09'),
-(181, 35, '2022/06/17', '高雄左營店', 8, 0, '中午', '13:00', '王鮭魚', '0984125252', 'yoyoman870221@gmail.com', '', '2022-06-16 09:25:16'),
-(182, 35, '2022/06/17', '高雄左營店', 8, 0, '中午', '13:00', '王鮭魚', '0984125252', 'rakuji.github@gmail.com', '', '2022-06-16 09:25:54'),
-(183, 35, '2022/06/17', '高雄左營店', 8, 0, '中午', '13:00', '王鮭魚', '0984125252', 'rakuji.github@gmail.com', '', '2022-06-16 09:26:42'),
-(184, 35, '2022/06/17', '高雄左營店', 4, 0, '中午', '12:00', '王鮭魚', '0984125252', 'yoyoman870221@gmail.com', '', '2022-06-17 01:19:41'),
-(185, 35, '2022/06/17', '高雄左營店', 3, 0, '中午', '11:30', '王鮭魚', '0984125252', 'yoyoman870221@gmail.com', '', '2022-06-17 01:20:25'),
-(186, 35, '2022/06/17', '高雄左營店', 6, 0, '中午', '10:30', '王鮭魚', '0984125252', 'yoyoman870221@gmail.com', '', '2022-06-17 01:20:58'),
-(187, 35, '2022/06/17', '高雄左營店', 6, 0, '中午', '13:00', '王曉明', '0923456798', 'rakuji.github@gmail.com', '1', '2022-06-17 04:23:40');
+(180, 35, '2022/06/16', '高雄左營店', 3, 0, '中午', '14:00', '王曉明', '0923456789', 'rakuji.github@gmail.com', '123132123123', '2022-06-16 04:03:09');
 
 -- --------------------------------------------------------
 
@@ -144,9 +137,9 @@ INSERT INTO `contact` (`id`, `name`, `email`, `select1`, `subject`, `message`) V
 (31, '王曉明', '1232@gmai.com', '1.一般消費建議', '讚', 'good'),
 (32, '顧客', 'qq12@gmail.com', '2.餐點回饋', '讚', 'holoo'),
 (33, '顧客', 'xx123@gmail.com', '2.餐點回饋', '讚讚', '大拇指的拉'),
+(34, 'x', '', '', '', ''),
 (35, '陳小華', 'tian@gmail.com', '1.一般消費建議', '讚讚', 'good'),
-(39, '顧客', 'qw123@gmail.com', '2.餐點回饋', '讚', 'GJ'),
-(41, '顧客100', 'qw123@gmail.com', '2.餐點回饋', '超好吃', '超好吃');
+(39, '顧客', 'qw123@gmail.com', '2.餐點回饋', '讚', 'GJ');
 
 -- --------------------------------------------------------
 
@@ -232,7 +225,8 @@ CREATE TABLE `employees` (
 INSERT INTO `employees` (`employee_id`, `name`, `email`, `phone_number`, `hire_date`, `job_id`, `salary`, `department_id`, `birthday`, `age`, `education`, `address`, `created_at`) VALUES
 (34, '員工3', 'qw123@gmail.com', '0955888999', '2022-03-21', '1', 100, 1, '2022-03-21', '25', '台灣大學', '高雄市XX路X號', '2022-03-21'),
 (35, '員工2', 'qq12@gmail.com', '0955888999', '2022-03-21', '2', 55, 2, '2022-03-21', '22', '台灣大學', '高雄市XX路XX號', '2022-03-21'),
-(36, '員工1', '1232@gmail.com', '0955888999', '2022-03-21', '1', 55, 1, '2022-03-21', '18', '台灣大學', '高雄市XX路XX號', '2022-03-21');
+(36, '員工1', '1232@gmail.com', '0955888999', '2022-03-21', '1', 55, 1, '2022-03-21', '18', '台灣大學', '高雄市XX路XX號', '2022-03-21'),
+(38, '陳小華', 'tian@gmail.com', '0955678876', '2022-06-14', '2', 500, 3, '2022-06-14', '1', '大學', '高雄市XX路XX號', '2022-06-14');
 
 -- --------------------------------------------------------
 
@@ -344,7 +338,7 @@ INSERT INTO `latest_news` (`sid`, `name`, `imgid`, `timestart`, `timeend`, `cont
 (94, '教師節', '8933bce0820713eb6d5fb1aae9fd04f1d9ae2b24.jpg', '2022-09-01', '2022-09-30', '樂時町教師節推出一日快閃「沐浴春風˙愛老師」優惠活動!\r\n'),
 (95, '人才招募', 'b8da104e8f6823da480ef3edb3b9bb8f58195631.jpg', '2022-01-01', '2022-12-31', '人才，在哪裡？快來樂時町這裡!請將您的履歷及提供方便連絡的時間，樂時町將與您聯繫!'),
 (99, '食品認證', '4c7708eb5e6eab418e8d365b3361229308442381.jpg', '2022-01-01', '2022-12-31', '樂時町通過「ISO17025實驗室管理系統認證」及「 ISO 22000食品安全管理系統驗證與HACCP」認證，，展現為食安把關、守護消費者的硬實力!'),
-(1111133, '安心測試', '79d1ea5ccc05be911af9187cf349cc3dd8d61e93.jpg', '2022-06-17', '2022-06-17', '測試食品');
+(1111131, '測試活動', '2b4a92bb5ae409596ec6f4fa260d39d6925cac43.jpg', '2022-06-16', '2022-06-16', '06166');
 
 -- --------------------------------------------------------
 
@@ -430,7 +424,7 @@ CREATE TABLE `member` (
 --
 
 INSERT INTO `member` (`MID`, `Mcreate_date`, `Mpic`, `Mname`, `Midentity`, `Msex`, `Mvocation`, `Mbirthday`, `Mcity`, `Maddress`, `Mmarry`, `Mchild`, `Memail`, `Mphone`, `Mpassword`) VALUES
-(1, '2022-03-04 01:54:16', '', '吳建凡', 'A193871609', '男', '工程師', '1983-03-12', '彰化縣', '伸港鄉埤墘一路13號', '已婚', '有小孩', 'fan@gmail.com', '0912479061', 'fan'),
+(1, '2022-03-04 01:54:16', '', '吳建凡', 'A193871609', '男', '工程師', '1983-03-12', '彰化縣', '伸港鄉埤墘一路13號', '已婚', '有小孩', 'fan@gmail.com', '0912479060', 'fan'),
 (2, '2022-03-06 11:19:20', '  ', '吳俊能', 'E196895954', '男', '廚師', '2001-01-17', '宜蘭縣', '宜蘭市南橋二路5號', '未婚', '無小孩', 'nan@gmail.com', '0978605291', 'nan'),
 (3, '2022-04-01 20:36:35', '', '許志文', 'H196059137', '男', '學生', '2003-01-11', '屏東縣', '新埤鄉振南路15號', '未婚', '無小孩', 'wen@gmail.com', '0963596423', 'wen'),
 (4, '2022-04-21 14:04:53', '', '藍淑芬', 'B291167381', '女', '學生', '2006-04-08', '新竹縣', '湖口鄉南窩路15號', '未婚', '無小孩', 'feng@gmail.com', '0925629306', 'feng'),
@@ -467,11 +461,7 @@ INSERT INTO `member` (`MID`, `Mcreate_date`, `Mpic`, `Mname`, `Midentity`, `Msex
 (52, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'aa123456@gmail.com', NULL, '123456'),
 (53, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'qw1235556@gmail.com', NULL, '123456'),
 (54, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'aa12377@gmail.com', NULL, '123'),
-(55, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'aa12355@gmail.com', NULL, '123456'),
-(56, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'abc123@gmail.com', NULL, '123456'),
-(57, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'aa1234@gmail.com', NULL, '12345'),
-(58, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'abc1236@gmail.com', NULL, '123456'),
-(59, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'aa1235555@gmail.com', NULL, '123456');
+(55, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'aa12355@gmail.com', NULL, '123456');
 
 -- --------------------------------------------------------
 
@@ -577,10 +567,7 @@ INSERT INTO `order` (`sid`, `cartTotal`, `couponPrice`, `cartTotalPrice`, `name`
 (328, 520, 100, 420, '王鮭魚', '0984125252', 'wang@gmail.com', '高雄市前金區中正四路211號', '2022-06-15 06:37:46'),
 (329, 3420, 50, 3370, '王鮭魚', '0984125252', 'wang@gmail.com', '高雄市前金區中正四路211號', '2022-06-15 08:01:05'),
 (330, 250, 0, 250, '王鮭魚', '0984125252', 'wang@gmail.com', '高雄市前金區中正四路211號', '2022-06-16 01:34:17'),
-(331, 3720, 100, 3620, '王鮭魚', '0984125252', 'wang@gmail.com', '高雄市前金區中正四路211號', '2022-06-16 04:08:02'),
-(332, 780, 0, 780, '王鮭魚', '0984125252', 'wang@gmail.com', '高雄市前金區中正四路211號', '2022-06-16 09:27:10'),
-(333, 780, 0, 780, '王鮭魚', '0984125252', 'wang@gmail.com', '高雄市前金區中正四路211號', '2022-06-17 01:21:11'),
-(334, 3470, 30, 3440, '王鮭魚', '0984125252', 'wang@gmail.com', '高雄市前金區中正四路211號', '2022-06-17 04:28:44');
+(331, 3720, 100, 3620, '王鮭魚', '0984125252', 'wang@gmail.com', '高雄市前金區中正四路211號', '2022-06-16 04:08:02');
 
 -- --------------------------------------------------------
 
@@ -643,17 +630,7 @@ INSERT INTO `orderdetail` (`id`, `order_id`, `product_id`, `quantity`) VALUES
 (479, 331, 26, 9),
 (480, 331, 2, 5),
 (481, 331, 6, 4),
-(482, 331, 17, 3),
-(483, 332, 1, 1),
-(484, 332, 2, 1),
-(485, 332, 3, 1),
-(486, 333, 1, 1),
-(487, 333, 2, 1),
-(488, 333, 3, 1),
-(489, 334, 6, 4),
-(490, 334, 17, 4),
-(491, 334, 2, 5),
-(492, 334, 26, 4);
+(482, 331, 17, 3);
 
 -- --------------------------------------------------------
 
@@ -768,9 +745,7 @@ CREATE TABLE `products_comment` (
 INSERT INTO `products_comment` (`id`, `product_id`, `rating`, `member_id`, `contents`, `created_at`) VALUES
 (264, 2, 1, 5, '給你六顆星，這是多出來的那一顆', '2022-06-12 07:52:12'),
 (273, 1, 5, 1, '好吃一直吃', '2022-06-15 02:08:47'),
-(276, 3, 5, 35, '超讚的出貨速度', '2022-06-15 06:37:22'),
-(279, 1, 5, 35, '超讚的出貨速度', '2022-06-16 09:27:56'),
-(280, 4, 3, 35, 'good', '2022-06-17 01:21:27');
+(276, 3, 5, 35, '超讚的出貨速度', '2022-06-15 06:37:22');
 
 -- --------------------------------------------------------
 
@@ -1164,7 +1139,7 @@ CREATE TABLE `recipeslist` (
 
 INSERT INTO `recipeslist` (`Recipes_ID`, `Recipes_Name`, `Recipes_Clicks`, `Recipes_Time`, `Recipes_Picture`, `RecipesBox_Kcal`, `RecipesBox_Time`, `RecipesBox_SeveralCopies`, `RecipesClass`) VALUES
 (1, '蛋包飯', 7, '2022-06-15 03:23:24', '蛋包飯.jpg', 759.1, 50, 1, '主食'),
-(2, '日式唐楊雞ver1.0', 35545, '2022-06-16 03:02:03', '日式唐楊雞.jpg', 417, 43, 3, '主菜'),
+(2, '日式唐楊雞', 35545, '2022-06-16 03:02:03', '日式唐楊雞.jpg', 417, 43, 3, '主菜'),
 (3, '可樂餅', 99, '2022-06-13 08:51:01', '可樂餅.jpg', 444, 36, 4, '前菜'),
 (4, '明太子義大利麵', 5, '2022-06-16 03:02:13', '明太子義大利麵.jpg', 645, 43, 3, '主食'),
 (5, '奶油鮮菇濃湯', 2, '2022-06-16 03:02:09', '奶油鮮菇濃湯.jpeg', 370, 10, 2, '湯品'),
@@ -1172,15 +1147,16 @@ INSERT INTO `recipeslist` (`Recipes_ID`, `Recipes_Name`, `Recipes_Clicks`, `Reci
 (7, '白醬奶油煙燻鮭魚義大利麵', 0, '2022-06-02 02:54:54', '白醬奶油煙燻鮭魚義大利麵.jpeg', 577, 38, 1, '主食'),
 (8, '日式火腿干酪熱三明治', 4, '2022-06-16 07:19:18', '日式火腿干酪熱三明治.jpeg', 291, 50, 3, '主食'),
 (9, '拿坡里義大利麵', 6, '2022-06-16 03:02:25', '拿坡里義大利麵.jpg', 727, 32, 1, '主食'),
-(10, '日式唐楊雞ver2.0', 7, '2022-06-16 03:19:41', '日式唐楊雞.jpg', 700, 25, 2, '主菜'),
-(11, '特大蛋包飯', 15, '2022-06-17 01:38:10', '蛋包飯.jpg', 498, 23, 2, '主食'),
+(10, '日式唐楊雞', 7, '2022-06-16 03:19:41', '日式唐楊雞.jpg', 700, 25, 2, '主菜'),
+(11, '蛋包飯', 14, '2022-06-15 02:49:40', '蛋包飯.jpg', 498, 23, 2, '主食'),
 (12, '拿坡里義大利麵', 4, '2022-06-15 03:32:48', '拿坡里義大利麵.jpg', 439, 36, 2, '主食'),
-(13, '青蔬鮭魚濃湯ver2.0', 3, '2022-06-14 09:27:37', '青蔬鮭魚濃湯.jpeg', 531, 41, 2, '湯品'),
-(14, '日式唐楊雞ver3.0', 4, '2022-06-15 02:52:23', '日式唐楊雞.jpg', 523, 37, 3, '主菜'),
-(15, '特大可樂餅', 58, '2022-06-17 04:18:26', '可樂餅.jpg', 753, 43, 3, '前菜'),
-(16, '日式火腿干酪熱三明治Ver2.0', 2, '2022-06-14 09:32:45', '日式火腿干酪熱三明治.jpeg', 710, 38, 4, '主食'),
+(13, '青蔬鮭魚濃湯', 3, '2022-06-14 09:27:37', '青蔬鮭魚濃湯.jpeg', 531, 41, 2, '湯品'),
+(14, '日式唐楊雞', 4, '2022-06-15 02:52:23', '日式唐楊雞.jpg', 523, 37, 3, '主菜'),
+(15, '可樂餅', 57, '2022-06-13 07:34:11', '可樂餅.jpg', 753, 43, 3, '前菜'),
+(16, '日式火腿干酪熱三明治', 2, '2022-06-14 09:32:45', '日式火腿干酪熱三明治.jpeg', 710, 38, 4, '主食'),
 (25, '北非蛋', 13, '2022-06-16 07:19:14', '北非蛋.jpg', 233.4, 50, 1, '前菜'),
-(26, '奶茶', 102, '2022-06-17 05:28:27', '奶茶.PNG', 233.9, 11, 1, '飲品');
+(26, '奶茶', 101, '2022-06-16 03:19:44', '奶茶.PNG', 233.9, 11, 1, '飲品'),
+(27, '冰淇淋', 143, '2022-06-16 06:11:30', '冰淇淋.jpg', 323, 33, 1, '甜點');
 
 -- --------------------------------------------------------
 
@@ -1715,7 +1691,7 @@ CREATE TABLE `voting_results` (
 --
 DROP TABLE IF EXISTS `view_shop`;
 
-CREATE ALGORITHM=UNDEFINED DEFINER=`John`@`%` SQL SECURITY DEFINER VIEW `view_shop`  AS SELECT `area`.`area_name` AS `area_name`, `sh`.`shop_id` AS `shop_id`, `sh`.`shop_name` AS `shop_name`, `sh`.`shop_address` AS `shop_address`, `sh`.`shop_tel` AS `shop_tel`, `day`.`day_content` AS `day_content`, `night`.`night_content` AS `night_content`, `sh`.`info_detail` AS `info_detail`, `sh`.`info_traffic` AS `info_traffic`, `sh`.`info_parking` AS `info_parking` FROM (((`shop_info` `sh` join `hour_day` `day` on((`sh`.`day_id` = `day`.`day_id`))) join `hour_night` `night` on((`sh`.`night_id` = `night`.`night_id`))) join `shop_area` `area` on((`sh`.`area_id` = `area`.`area_id`))) ;
+CREATE ALGORITHM=UNDEFINED SQL SECURITY DEFINER VIEW `view_shop`  AS SELECT `area`.`area_name` AS `area_name`, `sh`.`shop_id` AS `shop_id`, `sh`.`shop_name` AS `shop_name`, `sh`.`shop_address` AS `shop_address`, `sh`.`shop_tel` AS `shop_tel`, `day`.`day_content` AS `day_content`, `night`.`night_content` AS `night_content`, `sh`.`info_detail` AS `info_detail`, `sh`.`info_traffic` AS `info_traffic`, `sh`.`info_parking` AS `info_parking` FROM (((`shop_info` `sh` join `hour_day` `day` on((`sh`.`day_id` = `day`.`day_id`))) join `hour_night` `night` on((`sh`.`night_id` = `night`.`night_id`))) join `shop_area` `area` on((`sh`.`area_id` = `area`.`area_id`))) ;
 
 --
 -- 已傾印資料表的索引
@@ -1910,13 +1886,13 @@ ALTER TABLE `vendor`
 -- 使用資料表自動遞增(AUTO_INCREMENT) `booking`
 --
 ALTER TABLE `booking`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT COMMENT '訂位編號', AUTO_INCREMENT=188;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT COMMENT '訂位編號', AUTO_INCREMENT=181;
 
 --
 -- 使用資料表自動遞增(AUTO_INCREMENT) `contact`
 --
 ALTER TABLE `contact`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=43;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=41;
 
 --
 -- 使用資料表自動遞增(AUTO_INCREMENT) `creative_recipes`
@@ -1928,7 +1904,7 @@ ALTER TABLE `creative_recipes`
 -- 使用資料表自動遞增(AUTO_INCREMENT) `employees`
 --
 ALTER TABLE `employees`
-  MODIFY `employee_id` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=44;
+  MODIFY `employee_id` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=43;
 
 --
 -- 使用資料表自動遞增(AUTO_INCREMENT) `inv_unit`
@@ -1940,7 +1916,7 @@ ALTER TABLE `inv_unit`
 -- 使用資料表自動遞增(AUTO_INCREMENT) `latest_news`
 --
 ALTER TABLE `latest_news`
-  MODIFY `sid` int NOT NULL AUTO_INCREMENT COMMENT '最新消息編號', AUTO_INCREMENT=1111134;
+  MODIFY `sid` int NOT NULL AUTO_INCREMENT COMMENT '最新消息編號', AUTO_INCREMENT=1111132;
 
 --
 -- 使用資料表自動遞增(AUTO_INCREMENT) `meal_time`
@@ -1952,7 +1928,7 @@ ALTER TABLE `meal_time`
 -- 使用資料表自動遞增(AUTO_INCREMENT) `member`
 --
 ALTER TABLE `member`
-  MODIFY `MID` int NOT NULL AUTO_INCREMENT COMMENT '會員編碼', AUTO_INCREMENT=60;
+  MODIFY `MID` int NOT NULL AUTO_INCREMENT COMMENT '會員編碼', AUTO_INCREMENT=56;
 
 --
 -- 使用資料表自動遞增(AUTO_INCREMENT) `nutrition_label`
@@ -1964,13 +1940,13 @@ ALTER TABLE `nutrition_label`
 -- 使用資料表自動遞增(AUTO_INCREMENT) `order`
 --
 ALTER TABLE `order`
-  MODIFY `sid` int NOT NULL AUTO_INCREMENT COMMENT '訂單編號', AUTO_INCREMENT=335;
+  MODIFY `sid` int NOT NULL AUTO_INCREMENT COMMENT '訂單編號', AUTO_INCREMENT=332;
 
 --
 -- 使用資料表自動遞增(AUTO_INCREMENT) `orderdetail`
 --
 ALTER TABLE `orderdetail`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT COMMENT '編號', AUTO_INCREMENT=493;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT COMMENT '編號', AUTO_INCREMENT=483;
 
 --
 -- 使用資料表自動遞增(AUTO_INCREMENT) `period`
@@ -1988,7 +1964,7 @@ ALTER TABLE `products`
 -- 使用資料表自動遞增(AUTO_INCREMENT) `products_comment`
 --
 ALTER TABLE `products_comment`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT COMMENT '編號', AUTO_INCREMENT=282;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT COMMENT '編號', AUTO_INCREMENT=279;
 
 --
 -- 使用資料表自動遞增(AUTO_INCREMENT) `recipeslist`
